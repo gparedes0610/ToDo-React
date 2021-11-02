@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <div className="container mt-5">
-        <Agregartareas tareas={tareas} setTareas={setTareas} />
-        <Mostrartareas tareas={tareas} />
+        <Agregartareas setTareas={setTareas} tareas={tareas} />
+        <Mostrartareas tareas={tareas} setTareas={setTareas} />
       </div>
     </>
   );

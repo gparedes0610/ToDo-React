@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-function Agregartareas({ tareas, setTareas }) {
+function Agregartareas({ setTareas, tareas }) {
   const [texto, setTexto] = useState("");
-
-  const agregarNuevaTarea = () => {
+  const agregarTareaNueva = () => {
     setTareas([...tareas, texto]);
     setTexto("");
   };
@@ -25,7 +24,7 @@ function Agregartareas({ tareas, setTareas }) {
         type="button"
         id="button-addon2"
         onClick={() => {
-          agregarNuevaTarea();
+          agregarTareaNueva();
         }}
       >
         AgregarTarea
